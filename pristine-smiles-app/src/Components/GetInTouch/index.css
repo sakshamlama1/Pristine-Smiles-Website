@@ -1,0 +1,116 @@
+.get-in-touch-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh auto
+}
+
+.get-in-touch-content {
+    padding: 2.5em;
+    border-radius: 12px;
+    width: 75%;
+}
+
+.get-in-touch-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #5B9D7D;
+    margin-bottom: 1em;
+}
+
+.floating-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.floating-form input,
+.floating-form select,
+.floating-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #6EAEE0; /* Bottom border for inputs */
+    font-size: 18px;
+    padding: 18px 0;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.floating-form input:focus,
+.floating-form select:focus,
+.floating-form textarea:focus {
+    border-bottom: 2px solid #F1BF42; /* Highlight effect */
+}
+
+.floating-form select {
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg fill='%236EAEE0' width='14' height='14' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 20,0 10,15'/></svg>")
+        no-repeat right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+    padding-right: 24px;
+}
+
+.floating-form textarea {
+    resize: vertical;
+    min-height: 150px; 
+}
+
+.floating-form button {
+    background: #5B9D7D;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 3vh;
+    transition: background 0.3s ease-in-out;
+}
+
+.floating-form button:hover {
+    background-color: #6EAEE0;
+}
+
+.name-fields {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+
+.floating-form label {
+    font-size: 16px;
+}
+
+#dynamic-form-item {
+    margin-top: 1em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .get-in-touch-content {
+        width: 90%;
+        max-width: 900px; /* Prevents the form from becoming too wide on large smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .name-fields {
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    .get-in-touch-content {
+        width: 90%;
+        max-width: 600px; /* Adjust width for tablets and smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .get-in-touch-content {
+        width: 90%;
+        max-width: 400px; /* Adjust further for smaller mobile devices */
+    }
+}

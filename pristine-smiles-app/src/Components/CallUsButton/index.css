@@ -1,0 +1,41 @@
+/* General Styles for the Button */
+.call-us-button-container {
+    text-align: center;
+    flex-wrap: wrap; /* Allow buttons to wrap into next line if needed */
+    max-width: 100%; /* Ensure container doesn't overflow */
+    overflow: hidden; /* Prevent content spilling outside */
+}
+
+/* Button style */
+.call-us-button-container a {
+    text-align: center;
+    text-decoration: none;
+    width: 10em; 
+    height: clamp(35px, 4vh, 45px); 
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 18px);
+    align-items: center;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out; 
+}
+
+
+.fas {
+    font-size: 18px;
+}
+
+/* For smaller screens like mobile */
+@media (max-width: 780px) {
+    .call-us-button-container a {
+        width: 1.75em;
+    }
+
+    .fas {
+        font-size: 24px;
+    }
+
+}
+

@@ -1,0 +1,82 @@
+.services-booking-section {
+    background-color: #F7FAFC;
+    padding: 3rem 2rem;
+    margin: 5vh auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 1000px;
+    text-align: center;
+}
+
+.services-booking-section h2 {
+    font-size: 1.8rem;
+    color: #5B9D7D;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Increased paragraph font size here too */
+.services-booking-section p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: rgb(10, 5, 5);
+    margin: 0 auto;
+}
+
+.booking-service-btn {
+    border: none;
+    margin-top: 3vh;
+    width: 100%;
+    padding: 3vh auto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .services-booking-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .services-booking-section p {
+        font-size: 1.2rem;
+    }
+
+    .booking-service-btn {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small Devices (Large Phones / Small Tablets) */
+@media (max-width: 768px) {
+    .services-booking-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .services-booking-section p {
+        font-size: 1rem;
+    }
+
+    .booking-service-btn {
+        font-size: 1.2rem;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .services-booking-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .services-booking-section p {
+        font-size: 1rem;
+    }
+
+    .booking-service-btn {
+        font-size: 1rem;
+    }
+}
+

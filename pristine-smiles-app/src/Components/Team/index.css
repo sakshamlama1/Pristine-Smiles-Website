@@ -1,0 +1,53 @@
+.team-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 5vh auto;
+    width: 85%;
+}
+
+.team-member {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-image-wrapper {
+    flex: 0 0 350px;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.team-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+.team-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.team-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2D2D2D;
+    margin-bottom: 0.5rem;
+}
+
+.team-info .role {
+    font-weight: 500;
+    color: #5B9D7D;
+    margin-bottom: 1rem;
+}
+
+.team-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: black;
+}

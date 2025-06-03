@@ -1,0 +1,207 @@
+.hero {
+    display: flex;
+    height: 75vh;
+    padding-left: 5vw;
+}
+
+/* Left content */
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5vw;
+}
+
+.clinic-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: #5B9D7D;
+    text-transform: uppercase;
+    border-bottom: 4px solid #F1BF42;
+    padding-bottom: 0.6rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.clinic-name::after {
+    content: "";
+    display: block;
+    width: 75%;
+    height: 4px;
+    background: linear-gradient(90deg, #6EAEE0, #5B9D7D);
+    position: absolute;
+    bottom: -1.2rem;
+}
+
+.tagline {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: black;
+    line-height: 1.6;
+    margin-top: 1.2rem;
+}
+
+/* CTA buttons */
+.cta-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.9rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    white-space: nowrap;              
+    text-align: center;               
+    display: inline-block;
+    width: 48%;                  
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #5B9D7D;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #F1BF42;
+    color: black;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #5B9D7D;
+    border: 2px solid #5B9D7D;
+}
+
+.btn-secondary:hover {
+    border: 2px solid #F1BF42;
+    background-color: #F1BF42;
+    color: black;
+}
+
+/* Right image column */
+.hero-right {
+    flex: 1.2;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-position: right center; /* keeps the image aligned to the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: unset;
+        padding: 0;
+    }
+
+    .hero-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clinic-name {
+        font-size: 2.8rem;
+        width: 90%;
+    }
+
+    .tagline {
+        width: 90%;
+        font-size: 1.4rem;
+        margin: 1.2rem auto;  
+    }    
+
+    .btn-primary,
+    .btn-secondary {
+        width: 85vw;
+        font-size: 1.4rem;
+    }
+
+    .hero-img {
+        width: 90%;
+        height: auto;
+        object-fit: contain; /* maintain aspect ratio */
+        border-radius: 10px;
+        margin-top: 3vh;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        flex: unset;
+        width: 100%;
+        padding: 0;
+    }
+
+    .clinic-name {
+        font-size: 2.6rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+        margin: 1.2rem auto;  
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 80vw;
+        font-size: 1.2rem;
+    }
+
+    .hero-img {
+        width: 90%;
+        height: auto;
+        object-fit: contain; /* maintain aspect ratio */
+        border-radius: 10px;
+        margin-top: 3vh;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+}

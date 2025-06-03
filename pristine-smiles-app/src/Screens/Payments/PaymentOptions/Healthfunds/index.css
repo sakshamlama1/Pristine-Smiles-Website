@@ -1,0 +1,140 @@
+/* Layout Container */
+.healthfunds-information {
+    display: flex;
+    gap: 1.6rem;
+    margin: 5vh 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Left Column - Logos */
+.healthfunds-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+/* Logo Styling */
+.healthfund-logo {
+    width: 135px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0.2);
+    transition: transform 0.3s ease;
+}
+
+.healthfund-logo:hover {
+    transform: scale(1.05);
+}
+
+/* Right Column - Text */
+.healthfunds-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-left: 1rem;
+}
+
+.healthfunds-right h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+.healthfunds-right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+/* List Styling */
+.healthfunds-right ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.healthfunds-right li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.healthfunds-right li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5B9D7D;
+    font-weight: bold;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 1024px) {
+    .healthfunds-information {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .healthfunds-left,
+    .healthfunds-right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .healthfunds-left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+
+    .healthfund-logo {
+        width: 90px;
+    }
+
+    .healthfunds-right h2 {
+        font-size: 1.5rem;
+    }
+
+    .healthfunds-right p,
+    .healthfunds-right li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .healthfunds-left {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .healthfund-logo {
+        width: 80px;
+    }
+
+    .healthfunds-right h2 {
+        font-size: 1.3rem;
+    }
+
+    .healthfunds-right p,
+    .healthfunds-right li {
+        font-size: 0.95rem;
+    }
+}

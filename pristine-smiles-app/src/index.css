@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 100px;
+}
+
+html {
+  background-color: #F5F5F5;
+  scroll-behavior: smooth;
+}
+
+.navlink-r {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation link hover styles */
+.navlink-r:hover {
+  color: white;
+}
+
+#secondary {
+  border: 2px solid #5B9D7D;
+  background-color: #5B9D7D;
+  color: white;
+}
+
+#secondary:hover {
+  border: 2px solid #F1BF42;
+  background-color: #F1BF42;
+  color: black;
+}
+
+/* Remove the default link color and underline */
+a {
+  color: inherit;            /* Inherit the color from the parent element */
+  text-decoration: none;     /* Remove the underline */
+}
+
+.screen-title {
+  height: 30vh;
+  background: linear-gradient(135deg, 
+    #2D9CDB 0%,     /* Blue */
+    #5B9D7D 50%,    /* Green */
+    #F1BF42 100%    /* Yellow */
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+}
+
+/* Title text */
+.screen-title p {
+  color: white;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 3px solid rgba(241, 191, 66, 0.9); /* Softer yellow underline */
+  z-index: 1;
+}
+
+/* Decorative bottom underline */
+.screen-title p::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 75%;
+  height: 3px;
+  background: linear-gradient(90deg, #2D9CDB, #5B9D7D); /* Blue-green underline */
+}
+

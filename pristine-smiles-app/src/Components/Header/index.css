@@ -1,0 +1,372 @@
+.header-component {
+    width: 100vw;
+    max-width: 100%;
+    height: 100px; /* Header height */
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Prevents any content from shrinking */
+.header-component * {
+    flex-shrink: 0;
+}
+
+/* Header title and subtitle styles */
+.head-title img {
+    max-width: 100%;  /* Prevents it from overflowing */
+    height: auto;  /* Maintains aspect ratio */
+    width: 18em;  /* Default size */
+}
+
+/* Ensure the container scales well */
+.head-title {
+    display: flex;
+    align-items: center;    
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+/* Header items and anchor styles */
+.header-items {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-anchor {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 4vw;
+    transition: all 0.5s ease;
+}
+
+/* Header anchor hover styles */
+.header-anchor:hover {
+    color: #5B9D7D !important;
+}
+
+/* Dropdown menu and item styles */
+.dropdown-menu {
+    background-color: #111B47;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: white;
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+}
+
+/* Dropdown item hover styles */
+.dropdown-item:hover {
+    background-color: #DBEEFB;
+    color: black;
+}
+
+.header-buttons-container .header-buttons {
+    margin-bottom: 5px;
+}
+
+/* Header button and icon styles */
+.header-buttons button:first-child {
+    margin-right: 20px;
+}
+
+/* Style for the header buttons container */
+.header-buttons, .header-buttons-container {
+    display: flex;                   /* Align buttons horizontally */
+    justify-content: flex-end;       /* Align buttons to the right */
+    gap: 15px;                       /* Space between buttons */
+    align-items: center;             /* Center the buttons vertically */
+    flex-wrap: wrap; /* Allow buttons to wrap into next line if needed */
+    max-width: 100%; /* Ensure container doesn't overflow */
+    overflow: hidden; /* Prevent content spilling outside */
+}
+
+/* Header button styles */
+.header-buttons button {
+    text-align: center;
+    width: 10em; 
+    height: clamp(35px, 4vh, 45px);
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: clamp(16px, 2vw, 18px); 
+    align-items: center;
+    border: 2px solid #5B9D7D;
+    background-color: white;
+    color: black;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.5em 1em; 
+    transition: all 0.3s ease-in-out; 
+    white-space: nowrap; 
+}
+
+/* Header anchor hover styles */
+.header-anchor:hover {
+    color: black;
+}
+
+.btn:focus {
+    outline: none;  /* Removes the focus outline */
+    border: none;   /* Removes the border */
+}
+
+/* Optionally, you can also remove the focus effect on the dropdown toggle */
+.btn.dropdown-toggle:focus {
+    outline: none;  /* Removes the focus outline */
+    border: none;   /* Removes the border */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #5B9D7D;  
+    border-radius: 10px;
+    width: 90vw; /* Ensure it doesn't touch screen edges */
+    max-width: 600px;
+    padding: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Two-column layout */
+.row {
+    display: flex;  /* Ensure columns are side by side */
+    justify-content: space-between;  /* Distribute space evenly */
+    gap: 20px; /* Space between columns */
+    align-items: flex-start; /* Align content at the top */
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* General & Cosmetic Columns */
+.col-6 {
+    flex: 1;  /* Equal width */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Dropdown Header (Titles) */
+#dropdown-header {
+    font-size: 18px; /* Larger font for section titles */
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom:  4px solid #F1BF42;
+    border-radius: 0;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Remove default list styles */
+.col-6 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Space between items */
+.col-6 li {
+    margin-bottom: 6px;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px; /* Slightly increased for better spacing */
+    cursor: pointer;
+    z-index: 1100;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 5px; /* Smooth edges */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Transform bars into an "X" when menu is open */
+.hamburger.open .bar:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Reset animation when menu is closed */
+.hamburger .bar:nth-child(1),
+.hamburger .bar:nth-child(3) {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger .bar:nth-child(2) {
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background: #5B9D7D;
+    text-align: center;
+    z-index: 10;
+}
+
+.mobile-menu-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu-anchor {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.mobile-menu-buttons a:nth-child(odd) {
+    background-color: #5B9D7D; /* Original color */
+}
+
+.mobile-menu-buttons a:nth-child(even) {
+    background-color: #77B392; /* Lighter shade */
+}
+
+
+#menu-booking-btn-id {
+    display: none;
+}
+
+/* For smaller screens like mobile */
+@media (max-width: 780px) {
+    .header-items {
+      display: none; /* Hide the header items */
+    }
+  
+    .hamburger {
+      display: block; /* Ensure the hamburger button is shown */
+    }
+  
+    .mobile-menu {
+      display: block; /* Show the mobile menu */
+    }
+
+    #booking-btn-id {
+        display: none; /* Hide the header buttons */
+    }
+
+    #menu-booking-btn-id {
+        display: block;
+        font-size: 22px;
+        border-bottom: 4px solid #F1BF42;
+    }
+}
+
+/* For screens less than 1335px */
+@media (max-width: 1380px) {
+    .header-component {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Make sure the header-buttons align with the hamburger */
+    .header-buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 20px;
+    }
+
+    .hamburger {
+        display: flex; /* Ensure the hamburger is visible */
+        order: 1; /* Order the hamburger first */
+    }
+
+    .header-items {
+        display: none; /* Hide other items */
+    }
+
+    /* Make sure header buttons align properly */
+    .header-buttons button {
+        margin-left: 15px; /* Space between buttons */
+    }
+}
+
+/* Default behavior for larger screens */
+@media (min-width: 1636px) {
+    .hamburger {
+        display: none;  /* Hides the hamburger menu on larger screens */
+    }
+
+    .header-items {
+        display: flex;  /* Shows header items on larger screens */
+    }
+
+    .mobile-menu {
+        display: none;  /* Hides the mobile menu by default */
+    }
+
+    .header-buttons {
+        display: flex;
+        gap: 20px; /* Space between buttons */
+    }
+}
+
+
+
+
+
+
+
+
+
+

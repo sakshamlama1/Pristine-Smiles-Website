@@ -1,0 +1,90 @@
+/* Table container for responsive and neat layout */
+#table-container {
+    overflow-x: auto;
+    margin: 3vh 0;
+}
+
+/* Main table styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(45, 156, 219, 0.15);
+    overflow: hidden;
+}
+
+/* Table header */
+.styled-table thead tr {
+    background-color: #2D9CDB;
+    color: white;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.5rem; /* updated */
+}
+
+/* Header cells */
+.styled-table thead th {
+    padding: 12px 15px;
+    border-bottom: 3px solid #5B9D7D;
+}
+
+/* Table body rows */
+.styled-table tbody tr {
+    border-bottom: 1px solid #E0E0E0;
+    transition: background-color 0.3s ease;
+}
+
+/* Zebra striping for rows */
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #F9FBF9; /* very light green tint */
+}
+
+.styled-table tbody tr:hover {
+    background-color: #F1BF42;
+    cursor: pointer;
+}
+
+.styled-table tbody tr:hover td {
+    color: #000;
+}
+
+/* Table cells */
+.styled-table tbody td {
+    padding: 12px 15px;
+    color: #333;
+    font-size: 1.4rem; /* updated */
+    vertical-align: middle;
+}
+
+/* Optional: highlight first column */
+.styled-table tbody td:first-child {
+    font-weight: 600;
+    color: #2D9CDB;
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1024px) {
+    .styled-table thead tr {
+        font-size: 1.3rem;
+    }
+    .styled-table tbody td {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .styled-table thead tr {
+        font-size: 1rem; /* fallback for smaller screens */
+    }
+    .styled-table tbody td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .styled-table thead tr {
+        font-size: 0.9rem;
+    }
+    .styled-table tbody td {
+        font-size: 0.8rem;
+    }
+}

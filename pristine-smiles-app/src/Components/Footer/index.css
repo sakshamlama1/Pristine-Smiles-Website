@@ -1,0 +1,139 @@
+.footer-component {
+    background-color: #5B9D7D;
+    display: flex;
+    justify-content: space-evenly; /* Center footer content horizontally */
+    flex-direction: row; /* Stack the columns and social media vertically */
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    padding: 3em 0;
+    color: white; /* Default text color */
+    gap: 0.5em;
+}
+
+/* Footer items container */
+.footer-items {
+    display: flex;
+    justify-content: space-between;  /* Start with wide spacing */
+    margin: 0 auto;  /* Center the entire footer content */
+    gap: 6em; /* Large gap initially */
+    transition: all 0.3s ease; /* Smooth transition for responsiveness */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column h4, .footer-map h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: white;
+    position: relative;  /* Ensures the border appears below */
+    display: inline-block;  /* Makes sure the border adjusts to content width */
+    border-bottom: 4px solid #F1BF42;  /* Yellow border */
+    padding-bottom: 0.5em; /* Adds space above the yellow border */
+}
+
+/* Adding a bottom border with custom width */
+.column h4::after, .footer-map h4::after {
+    content: "";  /* Empty content for pseudo-element */
+    display: block;
+    width: 75%;  /* Makes the border span the full width of the h4 content */
+    height: 4px;  /* Border thickness */
+    background: linear-gradient(90deg, #6EAEE0, #5B9D7D); /* Blue-green gradient */
+    position: absolute;
+    bottom: -14px;
+}
+
+.column-anchor {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px; /* Adjust the font size for the links */
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+.column-anchor:hover {
+    border-bottom: 2px solid #F1BF42;
+    width: fit-content;
+}
+
+/* Social media icons container */
+.social-media {
+    display: flex;
+    gap: 1em; /* Space between the icons */
+    margin-top: 1em;
+}
+
+.social-media a {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: #5B9D7D;
+    transition: background-color 0.3s ease;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-map {
+    min-width: 20%;
+    max-width: 20%;
+    border-radius: 10px;
+}
+
+.footer-map h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Responsiveness: Reduce spacing and center columns */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-items {
+        justify-content: center;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .footer-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .column {
+        width: 80%;  /* Let each column take 80% width */
+    }
+    
+}
+
+

@@ -1,0 +1,284 @@
+/* Main Section */
+.services-landing {
+    padding: 0 2rem;
+    max-width: 85%;
+    margin: 5vh auto;
+}
+
+.services-split {
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-media-left {
+    flex: 1;
+    padding: 1rem;
+}
+
+.services-media-right {
+    flex: 2;
+}
+
+/* Introduction Paragraph */
+.services-intro, 
+.services-intro-description {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.services-intro-description b {
+    color: #5B9D7D;
+}
+
+.services-intro a,
+.services-intro-description a {
+    color: #F1BF42;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.services-intro a:hover,
+.services-intro-description a:hover {
+    color: #5B9D7D;
+}
+
+/* Tiles Container */
+.services-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    place-items: center; /* Ensures tiles are always centered */
+    margin-top: 3rem;
+}
+
+/* Tile Styling */
+.service-tile {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    min-height: 350px; /* Optional: keeps all tiles same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: auto; /* Let min-height + content dictate height */
+}
+
+/* Hover Effect */
+.service-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tile Paragraph */
+.service-tile p {
+    font-size: 1.4rem;
+    color: black;
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+/* Tile Heading */
+.service-tile h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2D9CDB;
+    margin-bottom: 1rem;
+}
+
+.services-intro {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.services-section {
+    margin-bottom: 30px;
+}
+
+.services-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.services-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.services-section li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5B9D7D;
+    font-weight: bold;
+}
+
+.services-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+.services-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F1BF42;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+.services-section p b {
+    color: #5B9D7D;
+}
+
+/* Tile Link */
+.tile-link {
+    font-size: 1.4rem;
+    color: #F1BF42;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+/* Tile Link Hover Effect */
+.tile-link:hover {
+    color: #5B9D7D;
+    text-decoration: underline;
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .services-landing {
+        padding: 0 1.5rem;
+        max-width: 90%;
+    }
+
+    .service-tile {
+        max-width: 100%;
+        padding: 1.5rem;
+        min-height: 300px;
+    }
+
+    .service-tile h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-tile p,
+    .tile-link,
+    .services-intro,
+    .services-section li {
+        font-size: 1.2rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .services-split {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+/* Small Devices (Large Phones / Small Tablets) */
+@media (max-width: 768px) {
+    .services-landing {
+        padding: 0 1rem;
+        max-width: 95%;
+    }
+
+    .services-tiles {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .service-tile {
+        padding: 1.2rem;
+        min-height: 280px;
+    }
+
+    .service-tile h3 {
+        font-size: 1.1rem;
+    }
+
+    .service-tile p,
+    .tile-link,
+    .services-intro,
+    .services-intro-description,
+    .services-section li {
+        font-size: 1rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .services-split {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .services-media-left,
+    .services-media-right {
+        width: 100%;
+        flex: none;
+    }
+
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .service-tile {
+        padding: 1rem;
+        min-height: 250px;
+    }
+
+    .service-tile h3 {
+        font-size: 0.9rem;
+    }
+
+    .service-tile p,
+    .tile-link,
+    .services-intro,
+    .services-intro-description,
+    .services-section li {
+        font-size: 0.8rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .services-intro.services-split {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .services-media-left,
+    .services-media-right {
+        width: 100%;
+    }
+}
+

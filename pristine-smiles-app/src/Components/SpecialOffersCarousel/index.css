@@ -1,0 +1,195 @@
+/* Carousel Wrapper */
+.offers-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Navigation Buttons */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  margin-bottom: 3vh;
+}
+
+.carousel-nav button {
+  background-color: #5B9D7D;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-nav button:hover {
+  background-color: #F1BF42;
+  color: #1e1e1e;
+}
+
+/* Offer Tiles Container */
+.offers-carousel {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.offers-carousel::-webkit-scrollbar {
+  display: none;               
+}
+
+/* Individual Offer Tile */
+.offer-tile {
+  background: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 calc((100% - 4rem) / 3); /* Fit 3 tiles with 2rem gap in between */
+  max-width: calc((100% - 4rem) / 3);
+  scroll-snap-align: start;
+}
+
+.offer-tile:hover {
+  transform: translateY(-4px);
+}
+
+/* Offer Image */
+.offer-tile img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.offer-tile h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: #5B9D7D;
+}
+
+/* Description List */
+.offer-description {
+  padding-left: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.offer-description li {
+  font-size: 1.4rem;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.offer-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #4B6783;
+}
+
+/* CTA Button */
+.offer-cta {
+  background-color: #5B9D7D;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.offer-cta:hover {
+  background-color: #3f7c61;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .offer-tile {
+    flex: 0 0 calc((100% - 2rem) / 2);
+    max-width: calc((100% - 2rem) / 2);
+  }
+
+  .offer-tile h2 {
+    font-size: 1.6rem;
+  }
+
+  .offer-price {
+    font-size: 1.4rem;
+  }
+
+  .offer-description li {
+    font-size: 1.2rem;
+  }
+
+  .offer-cta {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers-carousel {
+    gap: 1rem;
+  }
+
+  .offer-tile {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .offer-price {
+    font-size: 1.2rem;
+  }
+
+  .offer-tile h2 {
+    font-size: 1.4rem;
+  }
+
+  .offer-description li {
+    font-size: 1rem;
+  }
+
+  .offer-cta {
+    font-size: 1.6rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .carousel-nav button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .carousel-nav {
+    gap: 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .offer-cta {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .offer-tile {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+}

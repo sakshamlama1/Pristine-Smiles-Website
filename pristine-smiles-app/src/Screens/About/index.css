@@ -1,0 +1,150 @@
+.about-intro {
+    display: flex;
+    gap: 5rem;
+    margin: 5vh auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+}
+
+.about-left {
+    flex: 0 1 auto;  /* let it size based on content */
+}
+
+.about-left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto; 
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+    flex: 1 1 300px; /* allow it to grow, but not below 300px */
+    min-width: 250px;
+}
+
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+.section-sub-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    padding-bottom: 1.5rem;
+    border-bottom: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+.about-right p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.2rem;
+}
+
+.what-we-do,
+.what-makes-us-different {
+    background-color: #F7FAFC;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5vh;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.what-we-do ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.what-we-do li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.what-we-do li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5B9D7D;
+    font-weight: bold;
+}
+
+.what-makes-us-different p {
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 1024px) {
+    .about-intro {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    .what-makes-us-different,
+    .what-we-do {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .about-right p,
+    .what-we-do li,
+    .what-makes-us-different p {
+        font-size: 1.2rem; 
+    }
+
+    .section-heading,
+    .section-sub-heading {
+        font-size: 1.6rem; 
+    }
+
+    .screen-title p {
+        font-size: 1.6rem; 
+    }
+}
+
+@media (max-width: 768px) {
+    .about-intro {
+        padding: 0 1rem;
+    }
+
+    .what-makes-us-different,
+    .what-we-do {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .about-right p,
+    .what-we-do li,
+    .what-makes-us-different p {
+        font-size: 1.0rem;
+    }
+
+    .section-heading,
+    .section-sub-heading {
+        font-size: 1.4rem; 
+    }
+
+    .screen-title p {
+        font-size: 1.4rem;
+    }
+}

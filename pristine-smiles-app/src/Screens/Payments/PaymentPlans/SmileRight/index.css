@@ -1,0 +1,43 @@
+.smile-right-text {
+    width: 85%;
+    margin: 5vh auto;
+    gap: 4rem;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.smile-right-section {
+    margin-bottom: 30px;
+}
+
+.smile-right-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+.smile-right-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.smile-right-section ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.7;
+}
+
+.smile-right-section ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5B9D7D;
+    font-weight: bold;
+}

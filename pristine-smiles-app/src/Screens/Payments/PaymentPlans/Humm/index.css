@@ -1,0 +1,243 @@
+/* Humm Section Styling */
+.humm-info-section {
+    margin: 5vh auto;
+    width: 85%;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* Paragraph spacing */
+.humm-info-section p {
+    margin-bottom: 1.5rem;
+}
+
+/* Highlighted link */
+.humm-info-section a {
+    color: #2D9CDB;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Container: horizontal layout and spacing */
+.humm-things-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    flex-wrap: wrap;
+    margin: 5vh auto;
+}
+
+/* Images: same size and nicely scaled */
+.humm-things {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.humm-things:hover {
+    transform: scale(1.01);
+}
+
+/* Humm Instructions Section */
+.humm-instructions {
+    background-color: #FFF9E6;
+    margin-top: 5vh;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.humm-instructions h2 {
+    font-size: 2rem;
+    color: #5B9D7D;
+    margin-bottom: 3rem;
+    border-left: 6px solid #2D9CDB;
+    padding-left: 1.25rem;
+    font-weight: 700;
+    text-align: left;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* Step Grid */
+.humm-instructions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* Individual Step */
+.humm-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.humm-step:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.humm-step h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2D2D2D;
+}
+
+/* Logo Wrapper for Consistency */
+.humm-instruction-logo-wrapper {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.humm-instruction-logo {
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(0.1);
+    transition: transform 0.3s ease;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.humm-instruction-logo:hover {
+    transform: scale(1.08);
+}
+
+.humm-step p {
+    font-size: clamp(1rem, 1.15vw, 1.125rem);
+    line-height: 1.6;
+    color: #333;
+    max-width: 260px;
+}
+
+/* CTA Buttons */
+.humm-anchor-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.humm-anchor-buttons a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #fff;
+    background-color: #5B9D7D;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.humm-anchor-buttons a:hover {
+    background-color: #e85d00;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 1024px) {
+    .humm-instructions {
+        padding: 3rem 1.5rem;
+    }
+
+    .humm-instruction-logo-wrapper {
+        width: 180px;
+        height: 180px;
+    }
+
+    .humm-instructions h2 {
+        font-size: 1.7rem;
+        padding-left: 1rem;
+    }
+
+    .humm-step p {
+        font-size: 1.05rem;
+    }
+
+    .humm-info-section {
+        padding: 0 1rem;
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .humm-instructions {
+        padding: 2rem 1rem;
+    }
+
+    .humm-instructions h2 {
+        font-size: 1.5rem;
+        padding-left: 0.8rem;
+        text-align: left;
+    }
+
+    .humm-instructions-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .humm-instruction-logo-wrapper {
+        width: 160px;
+        height: 160px;
+    }
+
+    .humm-step {
+        padding: 1.5rem;
+    }
+
+    .humm-step p {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .humm-anchor-buttons a {
+        width: 100%;
+    }
+
+    .humm-info-section {
+        padding: 0 1rem;
+        font-size: 1rem;
+    }
+
+    .humm-things-component {
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .humm-things {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,212 @@
+/* Main Section */
+.payments-landing {
+    padding: 0 2rem;
+    max-width: 85%;
+    margin: 5vh auto;
+}
+
+/* Introduction Paragraph */
+.payments-intro {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.payments-intro b {
+    color: #5B9D7D;
+}
+
+/* Tiles Container */
+.payments-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    place-items: center; /* Ensures tiles are always centered */
+    margin-top: 3rem;
+}
+
+/* Tile Styling */
+.payment-tile {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    min-height: 350px; /* Optional: keeps all tiles same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    aspect-ratio: auto; /* Let min-height + content dictate height */
+}
+
+/* Hover Effect */
+.payment-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tile Heading */
+.payment-tile h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2D9CDB;
+    margin-bottom: 1rem;
+}
+
+/* Tile Paragraph */
+.payment-tile p {
+    font-size: 1.4rem;
+    color: black;
+    flex: 1;
+    margin-bottom: 1.5rem;
+}
+
+.payments-intro {
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.payments-section {
+    margin-bottom: 30px;
+}
+
+.payments-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.payments-section li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.payments-section li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #5B9D7D;
+    font-weight: bold;
+}
+
+.payments-section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+}
+
+/* Tile Link */
+.tile-link {
+    font-size: 1.4rem;
+    color: #F1BF42;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: auto;
+}
+
+/* Tile Link Hover Effect */
+.tile-link:hover {
+    color: #5B9D7D;
+    text-decoration: underline;
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1024px) {
+    .payments-landing {
+        padding: 0 1.5rem;
+        max-width: 90%;
+    }
+
+    .payment-tile {
+        max-width: 100%;
+        padding: 1.5rem;
+        min-height: 300px;
+    }
+
+    .payment-tile h3 {
+        font-size: 1.3rem;
+    }
+
+    .payment-tile p,
+    .tile-link,
+    .payments-intro,
+    .payments-section li {
+        font-size: 1.2rem;
+    }
+
+    .payments-section h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Small Devices (Large Phones / Small Tablets) */
+@media (max-width: 768px) {
+    .payments-landing {
+        padding: 0 1rem;
+        max-width: 95%;
+    }
+
+    .payments-tiles {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .payment-tile {
+        padding: 1.2rem;
+        min-height: 280px;
+    }
+
+    .payment-tile h3 {
+        font-size: 1.1rem;
+    }
+
+    .payment-tile p,
+    .tile-link,
+    .payments-intro,
+    .payments-section li {
+        font-size: 1rem;
+    }
+
+    .payments-section h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .payment-tile {
+        padding: 1rem;
+        min-height: 250px;
+    }
+
+    .payment-tile h3 {
+        font-size: 0.9rem;
+    }
+
+    .payment-tile p,
+    .tile-link,
+    .payments-intro,
+    .payments-section li {
+        font-size: 0.8rem;
+    }
+
+    .payments-section h2 {
+        font-size: 1.2rem;
+    }
+}
+

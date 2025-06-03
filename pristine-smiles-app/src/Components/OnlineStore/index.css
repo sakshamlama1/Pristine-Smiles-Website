@@ -1,0 +1,134 @@
+/* Base Styles */
+.online-store-information {
+    display: flex;
+    gap: 2rem;
+    margin: 5vh 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.online-store-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.online-store-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.online-store-right h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #5B9D7D;
+    margin-bottom: 1rem;
+    border-left: 4px solid #2D9CDB;
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.online-store-right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    max-width: 500px;
+}
+
+.online-store-information iframe {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: contain;
+    filter: grayscale(0.1);
+}
+
+.online-store-logos {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.online-store-logos a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.online-store-logos a img {
+    width: 200px;
+    height: 75px;
+    object-fit: contain;
+}
+
+/* Hover Effects */
+.online-store-logos a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .online-store-information {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .online-store-left,
+    .online-store-right {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .online-store-right h2 {
+        font-size: 1.7rem;
+    }
+
+    .online-store-right p {
+        font-size: 1.1rem;
+    }
+
+    .online-store-logos a img {
+        width: 180px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .online-store-right h2 {
+        font-size: 1.4rem;
+    }
+
+    .online-store-right p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .online-store-logos a img {
+        width: 150px;
+        height: 55px;
+    }
+
+    .online-store-left iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .online-store-right {
+        padding: 0 1rem;
+    }
+}
