@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Pristine-Smiles-Website/static/css/main.50b78067.css",
-    "main.js": "/Pristine-Smiles-Website/static/js/main.703791ad.js",
+    "main.css": "/Pristine-Smiles-Website/static/css/main.8e671d53.css",
+    "main.js": "/Pristine-Smiles-Website/static/js/main.08247700.js",
     "static/js/453.0d319a1b.chunk.js": "/Pristine-Smiles-Website/static/js/453.0d319a1b.chunk.js",
     "static/media/CompositeVeneersBonding.mp4": "/Pristine-Smiles-Website/static/media/CompositeVeneersBonding.43fd4d8da5eb28214bb6.mp4",
     "static/media/PreventativeFamilyDentistry.mp4": "/Pristine-Smiles-Website/static/media/PreventativeFamilyDentistry.360af825b54e9765fd35.mp4",
     "static/media/Invisalign.mp4": "/Pristine-Smiles-Website/static/media/Invisalign.7d118b25944a6bb860b9.mp4",
     "static/media/DentalVeneers.mp4": "/Pristine-Smiles-Website/static/media/DentalVeneers.53d8ca06f9a95e587946.mp4",
+    "static/media/team-member-4.png": "/Pristine-Smiles-Website/static/media/team-member-4.69bca1095c933a5a2f43.png",
     "static/media/SleepApneaMouthguard.mp4": "/Pristine-Smiles-Website/static/media/SleepApneaMouthguard.d162d90acdd09e4dfe81.mp4",
     "static/media/DentalFillings.mp4": "/Pristine-Smiles-Website/static/media/DentalFillings.987515964579966fc487.mp4",
     "static/media/RootCanalTreatment.mp4": "/Pristine-Smiles-Website/static/media/RootCanalTreatment.d2f5dbc9385525bf138d.mp4",
@@ -64,7 +65,7 @@
     "static/media/DentalAnxietyNervousPatients.mp4": "/Pristine-Smiles-Website/static/media/DentalAnxietyNervousPatients.54035837ebe75cfb510e.mp4",
     "static/media/humm-big-things.png": "/Pristine-Smiles-Website/static/media/humm-big-things.9e98986bc80bdf523cf7.png",
     "static/media/humm-little-things.png": "/Pristine-Smiles-Website/static/media/humm-little-things.d1dab3f4b2afc37c54f0.png",
-    "static/media/team-member-2.png": "/Pristine-Smiles-Website/static/media/team-member-2.d56cce8fe0df10cdda9c.png",
+    "static/media/team-member-1.png": "/Pristine-Smiles-Website/static/media/team-member-1.d56cce8fe0df10cdda9c.png",
     "static/media/afterpay-image.png": "/Pristine-Smiles-Website/static/media/afterpay-image.d4a9e03abe21015ce055.png",
     "static/media/afterpay-instruction-1.png": "/Pristine-Smiles-Website/static/media/afterpay-instruction-1.a5f2a951f92680e12fa5.png",
     "static/media/afterpay-instruction-3.png": "/Pristine-Smiles-Website/static/media/afterpay-instruction-3.10401bc92fc36a95465f.png",
@@ -74,12 +75,12 @@
     "static/media/humm-instructions-3.png": "/Pristine-Smiles-Website/static/media/humm-instructions-3.535ed7d9a9cf27ea601a.png",
     "static/media/humm-instructions-1.png": "/Pristine-Smiles-Website/static/media/humm-instructions-1.0ca8ae204d5ec5a62cb6.png",
     "index.html": "/Pristine-Smiles-Website/index.html",
-    "main.50b78067.css.map": "/Pristine-Smiles-Website/static/css/main.50b78067.css.map",
-    "main.703791ad.js.map": "/Pristine-Smiles-Website/static/js/main.703791ad.js.map",
+    "main.8e671d53.css.map": "/Pristine-Smiles-Website/static/css/main.8e671d53.css.map",
+    "main.08247700.js.map": "/Pristine-Smiles-Website/static/js/main.08247700.js.map",
     "453.0d319a1b.chunk.js.map": "/Pristine-Smiles-Website/static/js/453.0d319a1b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.50b78067.css",
-    "static/js/main.703791ad.js"
+    "static/css/main.8e671d53.css",
+    "static/js/main.08247700.js"
   ]
 }
