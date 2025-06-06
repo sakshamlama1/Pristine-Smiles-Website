@@ -24,7 +24,7 @@ function CosmeticDentistry() {
                             Treatments like <b>crowns</b>, <b>inlays</b>, and <b>onlays</b> not only enhance the look of your teeth but can also protect them, 
                             while other procedures like <b>teeth whitening</b> are purely aesthetic but can significantly boost self-confidence. 
                             During your consultation, our experienced dentists will help guide you toward the best treatment option based on the condition of 
-                            your teeth and the smile you desire. Book your <a href="/">$75 Dream Design Consultation</a> today to explore your cosmetic dentistry options.
+                            your teeth and the smile you desire.
                             <br></br><br></br>
                             <b>At Pristine Smiles, we offer a wide range of cosmetic dental treatments, including:</b>
                         </p>

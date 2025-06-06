@@ -4,11 +4,11 @@ import IntroVideoLink from '../../assets/videos/IntroVideo.mp4';
 
 function IntroVideo() {
     return (
-        <section class="clinic-intro-video">
-            <div class="container">
-                <h2 class="intro-video-heading">Welcome to Pristine Smiles</h2>
+        <section className="clinic-intro-video">
+            <div className="container">
+                <h2 className="intro-video-heading">Welcome to Pristine Smiles</h2>
                 <div className='intro-video-content'>
-                    <div class="video-wrapper">
+                    <div className="video-wrapper">
                         <video 
                             src={IntroVideoLink} 
                             autoplay 
@@ -16,7 +16,7 @@ function IntroVideo() {
                             muted 
                             playsinline 
                             controls 
-                            class="intro-video">
+                            className="intro-video">
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -35,7 +35,7 @@ function IntroVideo() {
                         </p>
                     </div>
                 </div>
-                
+                <a href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" className="intro-cta">Book Your Appointment</a>                
             </div>
         </section>
 

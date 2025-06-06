@@ -12,8 +12,8 @@
 }
 
 .get-in-touch-content h2 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     color: #5B9D7D;
     margin-bottom: 1em;
 }
@@ -30,10 +30,10 @@
     background: transparent;
     border: none;
     border-bottom: 2px solid #6EAEE0; /* Bottom border for inputs */
-    font-size: 18px;
     padding: 18px 0;
     width: 100%;
     outline: none;
+    font-size: 1.4rem;
     transition: border-color 0.3s ease-in-out;
 }
 
@@ -60,8 +60,8 @@
 .floating-form button {
     background: #5B9D7D;
     color: white;
-    font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.4rem;
     padding: 12px;
     border: none;
     border-radius: 25px;
@@ -71,7 +71,50 @@
 }
 
 .floating-form button:hover {
-    background-color: #6EAEE0;
+    background-color: #F1BF42;
+    color: black;
+}
+
+.small-note {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #F1BF42;
+    padding-bottom: 0.5em;
+}  
+
+.small-note::after {
+    content: ""; 
+    display: block;
+    width: 75%; 
+    height: 4px;
+    background: linear-gradient(90deg, #6EAEE0, #5B9D7D);
+    position: absolute;
+    bottom: -14px;
+}
+
+.book-btn-secondary {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: #5B9D7D;
+    border: 2px solid #5B9D7D;
+    font-size: 1.4rem;
+    padding: 12px 24px;
+    font-weight: 700;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1em;
+}
+  
+.book-btn-secondary:hover {
+    background-color: #F1BF42;
+    color: black;
+    border-color: #F1BF42;
 }
 
 .name-fields {
@@ -81,7 +124,7 @@
 }
 
 .floating-form label {
-    font-size: 16px;
+    font-size: 1.4rem;
 }
 
 #dynamic-form-item {
@@ -89,10 +132,36 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .get-in-touch-content {
         width: 90%;
         max-width: 900px; /* Prevents the form from becoming too wide on large smaller screens */
+    }
+
+    .get-in-touch-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .floating-form input,
+    .floating-form select,
+    .floating-form textarea {
+        font-size: 1.2rem;
+    }
+
+    .floating-form button {
+        font-size: 1.2rem;
+    }
+
+    .book-btn-secondary {
+        font-size: 1.2rem;
+    }
+
+    .small-note {
+        font-size: 1.4rem;
+    }  
+
+    .floating-form label {
+        font-size: 1.2rem;
     }
 }
 
@@ -105,6 +174,32 @@
     .get-in-touch-content {
         width: 90%;
         max-width: 600px; /* Adjust width for tablets and smaller devices */
+    }
+
+    .get-in-touch-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .floating-form input,
+    .floating-form select,
+    .floating-form textarea {
+        font-size: 1rem;
+    }
+
+    .floating-form button {
+        font-size: 1rem;
+    }
+
+    .book-btn-secondary {
+        font-size: 1rem;
+    }
+
+    .small-note {
+        font-size: 1.2rem;
+    }  
+
+    .floating-form label {
+        font-size: 1rem;
     }
 }
 

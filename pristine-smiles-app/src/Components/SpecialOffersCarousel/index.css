@@ -117,11 +117,12 @@
 
 .offer-cta {
   width: 100%;
+  text-decoration: none;
 }
 
 .offer-cta:hover {
-  background-color: #3f7c61;
-  color: #fff;
+  background-color: #F1BF42;
+  color: #1e1e1e;
 }
 
 .offer-content {

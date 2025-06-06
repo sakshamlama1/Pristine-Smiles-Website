@@ -10,7 +10,7 @@ function ServiceBooking({ title, content }) {
                 {content}
             </p>
             <a href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1">
-                <button className='booking-service-btn' id='secondary'>Book Now</button>  
+                <button className='booking-service-btn' id='secondary'>Book Your Appointment</button>  
             </a> 
         </div>
 

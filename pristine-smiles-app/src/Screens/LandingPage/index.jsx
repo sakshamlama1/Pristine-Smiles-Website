@@ -9,7 +9,6 @@ import imageList from "../../utils/carouselImages";
 import SpecialOffersCarousel from "../../Components/SpecialOffersCarousel";
 import offersList from "../../utils/specialOffers";
 import Hero from "../../Components/Hero";
-import Process from "../../Components/Process";
 import IntroVideo from "../../Components/IntroVideo";
 
 function LandingPage() {
@@ -21,7 +20,6 @@ function LandingPage() {
                 <div className="landing-page-content">
                     <Hero />
                     <IntroVideo />
-                    <Process />
                     <Carousel images={imageList} />
                     <SpecialOffersCarousel offers={offersList} />
                     <PriceListButton />

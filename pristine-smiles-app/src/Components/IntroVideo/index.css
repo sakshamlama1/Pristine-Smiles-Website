@@ -34,7 +34,6 @@
 .video-wrapper {
     flex: 1;
     max-width: 100%;
-    overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
@@ -60,7 +59,38 @@
     line-height: 1.6;
     text-align: left;
     color: black;
+    padding-top: 0.5rem;
 }
+
+.intro-cta {
+    width: 100%;
+    display: inline-block;
+    margin-top: 4rem;
+    background-color: #5B9D7D;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.intro-cta:hover {
+  background-color: #F1BF42;
+  color: black
+}
+
+@media (max-width: 1380px) {
+    .intro-video-content {
+        flex-direction: column;
+    }
+
+    .intro-cta {
+        margin-top: 3rem;
+    }
+}
+
 
 @media (max-width: 1024px) {
     .intro-video-heading {
@@ -71,8 +101,9 @@
         font-size: 1.2rem;
     }
 
-    .intro-video-content {
-        flex-direction: column;
+    .intro-cta {
+        margin-top: 2rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -83,6 +114,11 @@
 
     .intro-text {
         font-size: 1rem;
+    }
+
+    .intro-cta {
+        margin-top: 1rem;
+        font-size: 1.2rem;
     }
 }
 

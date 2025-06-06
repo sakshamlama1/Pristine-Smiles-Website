@@ -50,7 +50,7 @@ const SpecialOffersCarousel = ({ offers = [] }) => {
                 </ul>
               </div>
               
-              <button className="offer-cta">Pre-Pay & Book</button>
+              <a className="offer-cta" href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1">Pre-Pay & Book</a>
             </div>
           ))}
         </div>

@@ -78,6 +78,12 @@ function GetInTouch() {
                     </div>
                     
                     <button type="submit">Get In Touch</button>
+                    <div style={{ display: "flex", justifyContent: "center", flexDirection: "column", marginTop: "2rem" }}>
+                        <p className="small-note">Prefer to book directly?</p>
+                        <a href="/book-appointment" className="book-btn-secondary">
+                            Book Your Appointment
+                        </a>
+                    </div>
                 </form>
             </div>
         </div>
