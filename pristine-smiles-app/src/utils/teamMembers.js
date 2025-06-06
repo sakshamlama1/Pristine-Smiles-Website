@@ -1,24 +1,35 @@
-import teamMember2 from "../assets/team/team-member-2.png";
+import teamMember1 from "../assets/team/team-member-1.png";
+import teamMember4 from "../assets/team/team-member-4.png";
 
 const teamMembers = [
     {
         name: "Dr Pooja Lama",
         role: "Dentist",
-        image: teamMember2,
+        image: teamMember1,
         description: (
             <>
                 <p>
-                    Dr Pooja Lama received a Bachelor of Dental Surgery in 1998 and worked in private practice for seven years before moving to Australia in 2006 
-                    and received her Australian Dental Council Accreditation in 2006. Pooja enjoys all aspects of <a href="/services/general">general dentistry</a> and 
-                    takes the time to listen to her patient’s expectations and explains procedures so they are completely comfortable about their treatment.
+                    <b>Hi, I'm Dr. Pooja Lama — and I'm here to help you smile with confidence.</b>
                 </p>
                 <p>
-                    Dr Pooja Lama receives great satisfaction from helping a patient achieve the beautiful, healthy smile they have always desired. 
-                    Good health for Pooja is all about healthy habits. She believes in prevention rather than cure and finding time to keep fit physically, 
-                    mentally and socially is very important.
+                    I’ve always believed that going to the dentist shouldn’t be stressful — it should be comfortable, personal, 
+                    and even a little fun! I started this practice to create a welcoming space where patients of all ages feel heard, 
+                    cared for, and truly understood.
                 </p>
                 <p>
-                    Away from Smile Craft Dental, Pooja likes to spend time with her husband and two children and enjoys traveling.
+                    I’ve been practicing for over 25 years. Along the way, I’ve developed a special interest in cosmetic dentistry, 
+                    Invisalign, gentle family care, etc. and I love helping people feel great about their smiles.
+                </p>
+                <p>
+                    Whether you're here for a simple cleaning, a smile makeover, or anything in between, my team and I are committed to 
+                    making your visit smooth and stress-free. We take the time to explain everything, answer your questions, and make 
+                    sure you leave with a smile — every time.
+                </p>
+                <p>
+                    When I’m not in the office, you’ll find me reading, trying out new recipes, spending time with my kids, exploring the outdoors.
+                </p>
+                <p>
+                    Thanks for stopping by — I can’t wait to meet you!
                 </p>
             </>
         )
@@ -26,7 +37,7 @@ const teamMembers = [
     {
         name: "Kuja",
         role: "Dental Assistant",
-        image: teamMember2,
+        image: teamMember1,
         description: (
             <>
                 <p>
@@ -40,7 +51,7 @@ const teamMembers = [
     {
         name: "Emily",
         role: "Dental Assistant",
-        image: teamMember2,
+        image: teamMember1,
         description: (
             <>
                 <p>
@@ -53,7 +64,7 @@ const teamMembers = [
     {
         name: "Vani",
         role: "Dental Assistant",
-        image: teamMember2,
+        image: teamMember4,
         description: (
             <>
                 <p>

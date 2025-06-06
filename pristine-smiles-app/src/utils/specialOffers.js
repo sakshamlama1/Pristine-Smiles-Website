@@ -23,17 +23,16 @@ const offersList = [
       title: "Dental Check-Up, Clean Plus & X-Rays",
       price: "$198",
       description: [
-        "Comprehensive Oral Check-Up: A thorough examination of teeth, gums, and mouth to detect early signs of decay, gum disease, or other dental issues.",
+        "Comprehensive Oral Check-Up: A thorough examination including x rays and photos if needed to assess teeth, gums, and mouth to detect early signs of decay, gum disease, or other dental issues.",
         "Professional Clean: Removal of plaque, tartar, and stains followed by polishing to maintain oral hygiene and prevent future dental problems."
       ]
     },
     {
       image: OfferImageThree,
-      title: "Emergency Consultation",
+      title: "Emergency",
       price: "$98",
       description: [
-        "Gum Infection & Toothache: Diagnosis and treatment of pain or swelling caused by infections, decay, or gum disease to relieve discomfort and prevent further complications.",
-        "Simple Extraction: A straightforward procedure to safely remove a damaged or problematic tooth when restoration isn’t possible."
+        "Gum Infection & Toothache: Assessment of pain or swelling caused by infections, decay, or gum disease. Maximum of 2 x rays included. ",
       ],
     },
     {
@@ -41,7 +40,7 @@ const offersList = [
       title: "Dental Fillings",
       price: "$189",
       description: [
-        "Tooth Decay Treatment: Dental fillings restore teeth damaged by cavities, preventing further decay and restoring normal function.", 
+        "Tooth Decay Treatment: Dental fillings up to 2 surface to  restore teeth damaged by cavities, preventing further decay and restoring normal function.", 
         "Natural-Looking Materials: Options like composite resin blend with your tooth color for a seamless and durable finish."
       ],
     },

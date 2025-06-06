@@ -25,33 +25,37 @@ const SpecialOffersCarousel = ({ offers = [] }) => {
 
   return (
     <div className="offers-carousel-wrapper">
-        <div className="carousel-content" id="smiles-carousel">
-            <div className="carousel-overlay">
-                <div className="carousel-text-container">
-                    <h2>Special Offers</h2>
-                    <p>Explore limited-time dental offers designed to make your perfect smile more accessible and affordable.</p>
-                </div>
-            </div>
+      <div className="carousel-content" id="smiles-carousel">
+        <div className="carousel-overlay">
+          <div className="carousel-text-container">
+            <h2>Special Offers</h2>
+            <p>Explore limited-time dental offers designed to make your perfect smile more accessible and affordable.</p>
+          </div>
         </div>
-        <div className="carousel-nav">
-            <button onClick={handlePrev}>&larr;</button>
-            <div className="offers-carousel">
-                {getVisibleOffers().map((offer, idx) => (
-                <div className="offer-tile" key={idx}>
-                    <img src={offer.image} alt={offer.title} />
-                    <h2>{offer.title}</h2>
-                    {offer.price && <p className="offer-price">{offer.price}</p>}
-                    <ul className="offer-description">
-                    {offer.description.map((point, i) => (
-                        <li key={i}>{point}</li>
-                    ))}
-                    </ul>
-                    <button className="offer-cta">Pre-Pay & Book</button>
-                </div>
-                ))}
+      </div>
+      <div className="carousel-nav">
+        <button className="nav-btn" onClick={handlePrev}>&larr;</button>
+        <div className="offers-carousel">
+          {getVisibleOffers().map((offer, idx) => (
+            <div className="offer-tile" key={idx}>
+              <img src={offer.image} alt={offer.title} />
+              
+              <div className="offer-content">
+                <h2>{offer.title}</h2>
+                {offer.price && <p className="offer-price">{offer.price}</p>}
+                <ul className="offer-description">
+                  {offer.description.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+              
+              <button className="offer-cta">Pre-Pay & Book</button>
             </div>
-            <button onClick={handleNext}>&rarr;</button>
+          ))}
         </div>
+        <button className="nav-btn" onClick={handleNext}>&rarr;</button>
+      </div>
     </div>
   );
 };
