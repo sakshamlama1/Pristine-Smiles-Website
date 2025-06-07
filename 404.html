@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      location.replace("/Pristine-Smiles-Website" + location.pathname + location.search + location.hash);
+      const pathname = location.pathname;
+      const prefix = "/Pristine-Smiles-Website";
+
+      if (!pathname.startsWith(prefix)) {
+        location.replace(prefix + pathname + location.search + location.hash);
+      }
     </script>
   </head>
   <body></body>
