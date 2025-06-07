@@ -28,7 +28,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           {/* General Pages */}
-          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/Pristine-Smiles-Website" element={<LandingPage />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/faqs" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
