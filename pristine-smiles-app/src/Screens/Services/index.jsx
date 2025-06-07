@@ -1,5 +1,6 @@
 import "./index.css";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import GetInTouch from "../../Components/GetInTouch";
@@ -27,14 +28,14 @@ function Services() {
                             <div className="service-tile">
                                 <h3>General Dentistry</h3>
                                 <p>Comprehensive dental care focused on oral hygiene, prevention, and treatment of dental diseases for the whole family.</p>
-                                <a href="/services/general" className="tile-link">Learn More →</a>
+                                <NavLink to="/services/general" className="tile-link">Learn More →</NavLink>
                             </div>
 
                             {/* Cosmetic Dentistry Tile */}
                             <div className="service-tile">
                                 <h3>Cosmetic Dentistry</h3>
                                 <p>Enhance your smile with modern cosmetic treatments—from teeth whitening to Invisalign and veneers.</p>
-                                <a href="/services/cosmetic" className="tile-link">Learn More →</a>
+                                <NavLink to="/services/cosmetic" className="tile-link">Learn More →</NavLink>
                             </div>
                         </div>
                     </section>

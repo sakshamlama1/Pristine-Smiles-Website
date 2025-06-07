@@ -1,6 +1,7 @@
 import React from "react";
 import "./index.css";
 import HeroImage from "../../assets/hero-image.png";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
   return (
@@ -12,7 +13,7 @@ function Hero() {
             </p>
             <div className="cta-buttons">
                 <a href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" className="btn-primary">Book Now</a>
-                <a href="/services" className="btn-secondary">Our Services</a>
+                <NavLink to="/services" className="btn-secondary">Our Services</NavLink>
             </div>
         </div>
         <div className="hero-right">

@@ -1,4 +1,3 @@
-
 import "./index.css";
 import React, { useState } from "react";
 import title from '../../assets/title.png';
@@ -6,90 +5,83 @@ import { NavLink } from "react-router-dom";
 import CallUsButton from "../CallUsButton";
 
 function Header() {
-
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
         <div className="header-component">
             <div className='head-title'>
-                <a href="/Pristine-Smiles-Website"><img src={title} alt=""></img></a>
+                <NavLink to="/"><img src={title} alt="Pristine Smiles" /></NavLink>
             </div>
+
             <div className='header-items'>   
                 <div className="dropdown">
-                    {/* Dropdown menu for services */}
-                    <a href="#!" className="btn dropdown-toggle header-anchor" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                    <button className="btn dropdown-toggle header-anchor" data-bs-toggle="dropdown" aria-expanded="false">
                         Services
-                    </a>
+                    </button>
                     <ul className="dropdown-menu">
-                        {/* Create a two-column layout for General and Cosmetic services */}
                         <div className="row">
-                            {/* General Dentistry Column */}
                             <div className="col-6">
-                                <li><a className="dropdown-item" id="dropdown-header" href="/services/general">General Dentistry</a></li>
-                                <li><a className="dropdown-item" href="/services/general/children-dentistry">Children Dentistry</a></li>
-                                <li><a className="dropdown-item" href="/services/general/dental-anxiety-nervous-patients">Dental Anxiety and Nervous Patients</a></li>
-                                <li><a className="dropdown-item" href="/services/general/dental-bridge">Dental Bridge</a></li>
-                                <li><a className="dropdown-item" href="/services/general/dental-check-ups-cleaning">Dental Check Ups & Cleaning</a></li>
-                                <li><a className="dropdown-item" href="/services/general/dental-crown">Dental Crown</a></li>
-                                <li><a className="dropdown-item" href="/services/general/dental-fillings">Dental Fillings</a></li>
-                                <li><a className="dropdown-item" href="/services/general/dentures">Dentures</a></li>
-                                <li><a className="dropdown-item" href="/services/general/emergency-dentistry">Emergency Dentistry</a></li>
-                                <li><a className="dropdown-item" href="/services/general/mouth-guards">Mouth Guards</a></li>
-                                <li><a className="dropdown-item" href="/services/general/preventative-family-dentistry">Preventative & Family Dentistry</a></li>
-                                <li><a className="dropdown-item" href="/services/general/root-canal-treatment">Root Canal Treatment</a></li>
-                                <li><a className="dropdown-item" href="/services/general/sleep-apnea-mouthguard">Sleep Apnea Mouthguard</a></li>
-                                <li><a className="dropdown-item" href="/services/general/wisdom-teeth-removal">Wisdom Teeth Removal</a></li>
+                                <li><NavLink className="dropdown-item" id="dropdown-header" to="/services/general">General Dentistry</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/children-dentistry">Children Dentistry</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/dental-anxiety-nervous-patients">Dental Anxiety and Nervous Patients</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/dental-bridge">Dental Bridge</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/dental-check-ups-cleaning">Dental Check Ups & Cleaning</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/dental-crown">Dental Crown</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/dental-fillings">Dental Fillings</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/dentures">Dentures</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/emergency-dentistry">Emergency Dentistry</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/mouth-guards">Mouth Guards</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/preventative-family-dentistry">Preventative & Family Dentistry</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/root-canal-treatment">Root Canal Treatment</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/sleep-apnea-mouthguard">Sleep Apnea Mouthguard</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/general/wisdom-teeth-removal">Wisdom Teeth Removal</NavLink></li>
                             </div>
 
-                            {/* Cosmetic Dentistry Column */}
                             <div className="col-6">
-                                <li><a className="dropdown-item" id="dropdown-header"  href="/services/cosmetic">Cosmetic Dentistry</a></li>
-                                <li><a className="dropdown-item" href="/services/cosmetic/composite-veneers-bonding">Composite Veneers/Bonding</a></li>
-                                <li><a className="dropdown-item" href="/services/cosmetic/dental-veneers">Dental Veneers</a></li>
-                                <li><a className="dropdown-item" href="/services/cosmetic/invisalign">Invisalign</a></li>
-                                <li><a className="dropdown-item" href="/services/cosmetic/teeth-whitening">Teeth Whitening</a></li>
+                                <li><NavLink className="dropdown-item" id="dropdown-header" to="/services/cosmetic">Cosmetic Dentistry</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/cosmetic/composite-veneers-bonding">Composite Veneers/Bonding</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/cosmetic/dental-veneers">Dental Veneers</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/cosmetic/invisalign">Invisalign</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/services/cosmetic/teeth-whitening">Teeth Whitening</NavLink></li>
                             </div>
                         </div>
                     </ul>
                 </div>
+
                 <div className="dropdown">
-                    {/* Dropdown menu for payment options */}
-                    <a href="#!" className="btn dropdown-toggle header-anchor" role="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                    <button className="btn dropdown-toggle header-anchor" data-bs-toggle="dropdown" aria-expanded="false">
                         Payments
-                    </a>
+                    </button>
                     <ul className="dropdown-menu">
-                        {/* Dropdown items for different payment options */}
                         <div className="row">
                             <div className="col-6">
-                                <li><a className="dropdown-item" id="dropdown-header" href="/payment-options">Payment Options</a></li>
-                                <li><a className="dropdown-item" href="/payment-options/child-dental-benefit">Child Dental Benefit Schedule</a></li>
-                                <li><a className="dropdown-item" href="/payment-options/veterans-affairs">Department of Veterans' Affairs</a></li>
-                                <li><a className="dropdown-item" href="/payment-options/healthfunds">Healthfunds</a></li>
+                                <li><NavLink className="dropdown-item" id="dropdown-header" to="/payment-options">Payment Options</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/payment-options/child-dental-benefit">Child Dental Benefit Schedule</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/payment-options/veterans-affairs">Department of Veterans' Affairs</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/payment-options/healthfunds">Healthfunds</NavLink></li>
                             </div>
                             <div className="col-6">
-                                <li><a className="dropdown-item" id="dropdown-header" href="/payment-plans">Payment Plans</a></li>
-                                <li><a className="dropdown-item" href="/payment-plans/afterpay">Afterpay</a></li>
-                                <li><a className="dropdown-item" href="/payment-plans/humm">HUMM</a></li>
-                                <li><a className="dropdown-item" href="/payment-plans/smile-right">Smile Right</a></li>
+                                <li><NavLink className="dropdown-item" id="dropdown-header" to="/payment-plans">Payment Plans</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/payment-plans/afterpay">Afterpay</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/payment-plans/humm">HUMM</NavLink></li>
+                                <li><NavLink className="dropdown-item" to="/payment-plans/smile-right">Smile Right</NavLink></li>
                             </div>
                         </div>
                     </ul>
                 </div>
+
                 <div className='header-buttons'>
-                    <a href='/about-us' className='header-anchor'>About Us</a>
+                    <NavLink to="/about-us" className="header-anchor">About Us</NavLink>
                 </div> 
             </div>
             
-            {/* Header buttons and hamburger in one flex container */}
             <div className="header-buttons-container">
-                {/* The header-buttons will appear next to the hamburger button */}
                 <div className='header-buttons'>
                     <CallUsButton />
-                    <a id="booking-btn-id" className="navlink-r" href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1">
+                    <a id="booking-btn-id" className="navlink-r" href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" target="_blank" rel="noopener noreferrer">
                         <button className='btn' id='secondary'>Book Now</button>  
                     </a>    
                 </div>
-                {/* Hamburger menu */}
                 <div className={`hamburger ${menuOpen ? "open" : ""}`} onClick={() => setMenuOpen(!menuOpen)}>
                     <span className="bar"></span>
                     <span className="bar"></span>
@@ -97,11 +89,10 @@ function Header() {
                 </div>
             </div>
 
-            {/* Mobile Menu: Show the links when menu is open */}
             {menuOpen && (
                 <div className="mobile-menu">
                     <div className="mobile-menu-buttons">
-                        <NavLink id="menu-booking-btn-id" to="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>Book Now</NavLink>
+                        <a id="menu-booking-btn-id" className="mobile-menu-anchor" href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Book Now</a>
                         <NavLink to="/services" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>Services</NavLink>
                         <NavLink to="/payments" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>Payments</NavLink>
                         <NavLink to="/about-us" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>About Us</NavLink>

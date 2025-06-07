@@ -1,5 +1,6 @@
-import "./index.css"
+import "./index.css";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import GetInTouch from "../../Components/GetInTouch";
@@ -27,19 +28,19 @@ function Payments() {
                             <div className="payment-tile">
                                 <h3>Payment Options</h3>
                                 <p>Choose from a range of convenient payment methods for fast health fund claiming.</p>
-                                <a href="/payment-options" className="tile-link">Learn More →</a>
+                                <NavLink to="/payment-options" className="tile-link">Learn More →</NavLink>
                             </div>
 
                             {/* Payment Plans Tile */}
                             <div className="payment-tile">
                                 <h3>Payment Plans</h3>
                                 <p>Spread the cost of your dental treatment with interest-free payment plans tailored to your budget and lifestyle.</p>
-                                <a href="/payment-plans" className="tile-link">Learn More →</a>
+                                <NavLink to="/payment-plans" className="tile-link">Learn More →</NavLink>
                             </div>
                         </div>
                     </section>
                     <Carousel images={imageList} />
-                    <SpecialOffersCarousel offers={offersList}/>
+                    <SpecialOffersCarousel offers={offersList} />
                     <PriceListButton />
                     <GetInTouch />
                 </div>

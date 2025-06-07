@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './Components/ScrollToTop';
 
 // Import all screens
@@ -24,7 +24,7 @@ import {
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter basename="/Pristine-Smiles-Website">
         <ScrollToTop />
         <Routes>
           {/* General Pages */}
@@ -73,7 +73,7 @@ function App() {
           <Route path="/services/general/sleep-apnea-mouthguard" element={<SleepApneaMouthguard />} />
           <Route path="/services/general/wisdom-teeth-removal" element={<WisdomTeethRemoval />} />
         </Routes>
-      </Router>
+      </BrowserRouter>
     </>
   );
 }

@@ -4,13 +4,14 @@ import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import GetInTouch from "../../Components/GetInTouch";
 import FAQComponent from "../../Components/FAQComponent";
+import { NavLink } from "react-router-dom";
 
 const faqsArray = [
     {
         question: "How often should I visit my dentist?",
         answer: (
             <>
-              Regular six month <a href="/services" className="faq-link">dental visits</a> are recommended and will assist in detection of problems at early stage and also maintaining good oral hygiene and health.
+              Regular six month <NavLink to="/services" className="faq-link">dental visits</NavLink> are recommended and will assist in detection of problems at early stage and also maintaining good oral hygiene and health.
             </>
         )
     },
@@ -42,7 +43,7 @@ const faqsArray = [
         question: "Should I have teeth whitening before or after I have my teeth restored or replaced?",
         answer: (
             <>
-              If you are considering <a href="/services/cosmetic/teeth-whitening" className="faq-link">teeth whitening</a>, then you should discuss this with us before we proceed with any restorative or major dental work. Whitening should be carried out first, so the artificial tooth or filling can be matched to the shade your teeth will be after your whitening procedure.
+              If you are considering <NavLink to="/services/cosmetic/teeth-whitening" className="faq-link">teeth whitening</NavLink>, then you should discuss this with us before we proceed with any restorative or major dental work. Whitening should be carried out first, so the artificial tooth or filling can be matched to the shade your teeth will be after your whitening procedure.
             </>
         )
     },

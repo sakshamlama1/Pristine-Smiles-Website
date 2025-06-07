@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import Header from "../../../Components/Header";
 import Footer from "../../../Components/Footer";
 import GetInTouch from "../../../Components/GetInTouch";
@@ -50,26 +51,26 @@ function PaymentPlans() {
                             <div className="payment-tile">
                                 <h3>Afterpay</h3>
                                 <p>Enjoy your dental treatment now and pay later in four easy, interest-free fortnightly installments.</p>
-                                <a href="/payment-plans/afterpay" className="tile-link">Learn More →</a>
+                                <NavLink to="/payment-plans/afterpay" className="tile-link">Learn More →</NavLink>
                             </div>
 
                             {/* HUMM */}
                             <div className="payment-tile">
                                 <h3>HUMM</h3>
                                 <p>Finance your dental treatments over time with HUMM's flexible interest-free repayment options.</p>
-                                <a href="/payment-plans/humm" className="tile-link">Learn More →</a>
+                                <NavLink to="/payment-plans/humm" className="tile-link">Learn More →</NavLink>
                             </div>
 
                             {/* Smile Right */}
                             <div className="payment-tile">
                                 <h3>Smile Right</h3>
                                 <p>Tailored dental payment plans with Smile Right—designed to make your smile transformation more manageable.</p>
-                                <a href="/payment-plans/smile-right" className="tile-link">Learn More →</a>
+                                <NavLink to="/payment-plans/smile-right" className="tile-link">Learn More →</NavLink>
                             </div>
                         </div>
                     </section>
                     <Carousel images={imageList} />
-                    <SpecialOffersCarousel offers={offersList}/>
+                    <SpecialOffersCarousel offers={offersList} />
                     <PriceListButton />
                     <GetInTouch />
                 </div>
