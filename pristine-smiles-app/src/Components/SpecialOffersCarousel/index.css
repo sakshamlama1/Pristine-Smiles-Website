@@ -65,7 +65,7 @@
 
 /* Title */
 .offer-tile h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 0.75rem;
   font-weight: 700;
   color: #5B9D7D;
@@ -78,7 +78,7 @@
 }
 
 .offer-description li {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: black;
   font-weight: 500;
   margin-bottom: 0.4rem;
@@ -86,7 +86,7 @@
 }
 
 .offer-price {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #4B6783;
 }
@@ -99,7 +99,7 @@
   border: none;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -133,7 +133,7 @@
 }
 
 .offer-description {
-  flex-grow: 1; /* Fills remaining space and pushes button down */
+  flex-grow: 1;
 }
 
 
@@ -155,8 +155,13 @@
     font-size: 1.2rem;
   }
 
+  .nav-btn,
   .offer-cta {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-btn {
+    height: 50px;
   }
 }
 
@@ -169,36 +174,22 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
-  .offer-price {
-    font-size: 1.3rem;
-  }
 
   .offer-tile h2 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+  }
+  
+  .offer-price {
+    font-size: 1.2rem;
   }
 
   .offer-description li {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
+  .nav-btn,
   .offer-cta {
-    font-size: 1.6rem;
-    padding: 0.6rem 1rem;
-  }
-
-  .carousel-nav button {
     font-size: 1.2rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .carousel-nav {
-    gap: 0.5rem;
-    padding: 0 1rem;
-  }
-
-  .offer-cta {
-    font-size: 1.4rem;
   }
 }
 

@@ -14,7 +14,7 @@
 }
 
 .clinic-name {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
     color: #5B9D7D;
@@ -37,7 +37,7 @@
 }
 
 .tagline {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 2rem;
     color: black;
@@ -55,7 +55,7 @@
 
 .btn-primary,
 .btn-secondary {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     padding: 0.9rem 2rem;
     border-radius: 10px;
@@ -64,7 +64,7 @@
     white-space: nowrap;              
     text-align: center;               
     display: inline-block;
-    width: 48%;                  
+    width: 100%;                  
     box-sizing: border-box;
 }
 
@@ -133,20 +133,20 @@
     }
 
     .clinic-name {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         width: 90%;
     }
 
     .tagline {
         width: 90%;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin: 1.2rem auto;  
     }    
 
     .btn-primary,
     .btn-secondary {
         width: 85vw;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .hero-img {
@@ -179,18 +179,18 @@
     }
 
     .clinic-name {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
     
     .tagline {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 1.2rem auto;  
     }
 
     .btn-primary,
     .btn-secondary {
         width: 80vw;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .hero-img {
