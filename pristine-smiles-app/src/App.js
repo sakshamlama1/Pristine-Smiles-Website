@@ -24,11 +24,11 @@ import {
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/Pristine-Smiles-Website">
         <ScrollToTop />
         <Routes>
           {/* General Pages */}
-          <Route exact path="/Pristine-Smiles-Website" element={<LandingPage />} />
+          <Route exact path="/" element={<LandingPage />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/faqs" element={<FAQ />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
