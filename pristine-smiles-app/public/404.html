@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      // Redirect all 404s to the main index page so React Router can handle it
-      location.replace("/Pristine-Smiles-Website" + location.pathname);
+      location.replace("/Pristine-Smiles-Website" + location.pathname + location.search + location.hash);
     </script>
   </head>
   <body></body>
