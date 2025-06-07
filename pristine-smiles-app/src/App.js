@@ -24,7 +24,7 @@ import {
 function App() {
   return (
     <>
-      <Router basename="/Pristine-Smiles-Website">
+      <Router>
         <ScrollToTop />
         <Routes>
           {/* General Pages */}
