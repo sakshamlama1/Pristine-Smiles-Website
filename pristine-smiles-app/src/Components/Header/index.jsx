@@ -12,7 +12,7 @@ function Header() {
     return (
         <div className="header-component">
             <div className='head-title'>
-                <a href="/"><img src={title} alt=""></img></a>
+                <a href="/Pristine-Smiles-Website"><img src={title} alt=""></img></a>
             </div>
             <div className='header-items'>   
                 <div className="dropdown">
