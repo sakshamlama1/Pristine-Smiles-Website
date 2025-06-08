@@ -8,21 +8,24 @@
     position: relative;
     padding: 3em 0;
     color: white; /* Default text color */
-    gap: 0.5em;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
-/* Footer items container */
 .footer-items {
     display: flex;
-    justify-content: space-between;  /* Start with wide spacing */
-    margin: 0 auto;  /* Center the entire footer content */
-    gap: 6em; /* Large gap initially */
-    transition: all 0.3s ease; /* Smooth transition for responsiveness */
+    justify-content: space-between;
+    align-items: flex-start; /* This is the key line to align Y-axis (top aligned) */
+    gap: 6em;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    min-height: 200px;
 }
 
 .column h4, .footer-map h4 {
@@ -73,6 +76,8 @@
     background-color: #fff;
     border-radius: 50%;
     width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     font-size: 25px;
     color: #5B9D7D;
@@ -88,12 +93,13 @@
     min-width: 30%;
     max-width: 30%;
     border-radius: 10px;
-    padding: 0 1em;
+    padding-right: 2rem;
 }
 
 .footer-map h6 {
     font-size: 16px;
     font-weight: 600;
+    margin-bottom: 0.5em;
 }
 
 /* Responsiveness: Reduce spacing and center columns */
@@ -111,29 +117,28 @@
 }
 
 @media (max-width: 768px) {
-    .footer-items {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
+    .footer-map {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 1em;
     }
 
-    .column {
-        width: 100%;
+    .footer-map h6 {
+        text-align: center;
     }
-
 }
 
+
 @media (max-width: 600px) {
-    .footer-items {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
+    .column {
+        width: 90%;
+        text-align: center;
     }
 
-    .column {
-        width: 80%;  /* Let each column take 80% width */
+    .column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
-    
 }
 
 

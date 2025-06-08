@@ -77,7 +77,9 @@ function Header() {
             
             <div className="header-buttons-container">
                 <div className='header-buttons'>
-                    <CallUsButton />
+                    <div className="header-call-us-button">
+                        <CallUsButton />
+                    </div>
                     <a id="booking-btn-id" className="navlink-r" href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" target="_blank" rel="noopener noreferrer">
                         <button className='btn' id='secondary'>Book Now</button>  
                     </a>    
@@ -96,6 +98,9 @@ function Header() {
                         <NavLink to="/services" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>Services</NavLink>
                         <NavLink to="/payments" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>Payments</NavLink>
                         <NavLink to="/about-us" className="mobile-menu-anchor" onClick={() => setMenuOpen(false)}>About Us</NavLink>
+                        <div className="mobile-menu-anchor">
+                            <CallUsButton />
+                        </div>
                     </div>
                 </div>
             )}

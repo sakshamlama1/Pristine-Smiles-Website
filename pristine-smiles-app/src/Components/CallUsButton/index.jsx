@@ -23,7 +23,7 @@ function CallUsButton() {
         <a href="tel:+61294761418">
           <i 
             className="fas fa-phone fa-rotate-90" 
-            style={{ color: 'black', marginRight: "5px", marginTop: "3px" }} 
+            style={{ color: 'white', marginRight: "5px", marginTop: "3px" }} 
           ></i>
         </a>
       ) : (
@@ -31,7 +31,7 @@ function CallUsButton() {
         <a href="tel:+61294761418">
           <i 
             className="fas fa-phone fa-rotate-90" 
-            style={{ color: 'black', marginRight: "5px", marginTop: "3px" }} 
+            style={{ color: 'white', marginRight: "5px", marginTop: "3px" }} 
           ></i>
           (02) 9476 1418
         </a>

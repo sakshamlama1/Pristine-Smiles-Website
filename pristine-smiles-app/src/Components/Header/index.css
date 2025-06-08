@@ -286,28 +286,24 @@
     display: none;
 }
 
-/* For smaller screens like mobile */
-@media (max-width: 780px) {
-    .header-items {
-      display: none; /* Hide the header items */
-    }
-  
+
+/* Default behavior for larger screens */
+@media (min-width: 1636px) {
     .hamburger {
-      display: block; /* Ensure the hamburger button is shown */
+        display: none;  /* Hides the hamburger menu on larger screens */
     }
-  
+
+    .header-items {
+        display: flex;  /* Shows header items on larger screens */
+    }
+
     .mobile-menu {
-      display: block; /* Show the mobile menu */
+        display: none;  /* Hides the mobile menu by default */
     }
 
-    #booking-btn-id {
-        display: none; /* Hide the header buttons */
-    }
-
-    #menu-booking-btn-id {
-        display: block;
-        font-size: 22px;
-        border-bottom: 4px solid #F1BF42;
+    .header-buttons {
+        display: flex;
+        gap: 20px; /* Space between buttons */
     }
 }
 
@@ -340,38 +336,21 @@
     .header-buttons button {
         margin-left: 15px; /* Space between buttons */
     }
-}
 
-/* Default behavior for larger screens */
-@media (min-width: 1636px) {
-    .hamburger {
-        display: none;  /* Hides the hamburger menu on larger screens */
+    .header-call-us-button {
+        display: none;
     }
 
-    .header-items {
-        display: flex;  /* Shows header items on larger screens */
+    #booking-btn-id {
+        display: none; /* Hide the header buttons */
     }
 
-    .mobile-menu {
-        display: none;  /* Hides the mobile menu by default */
-    }
-
-    .header-buttons {
-        display: flex;
-        gap: 20px; /* Space between buttons */
+    #menu-booking-btn-id {
+        display: block;
+        font-size: 22px;
+        border-bottom: 4px solid #F1BF42;
     }
 }
-
-@media (max-width: 400px) {
-    .hamburger {
-      display: flex !important;
-    }
-
-    .head-title {
-        margin-left: 0;
-    }
-}
-  
 
 
 

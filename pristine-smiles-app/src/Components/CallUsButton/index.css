@@ -27,6 +27,12 @@
     font-size: 18px;
 }
 
+@media (max-width: 1380px) {
+    .call-us-button-container a {
+        color: white;
+    }
+}
+
 /* For smaller screens like mobile */
 @media (max-width: 780px) {
     .call-us-button-container a {
