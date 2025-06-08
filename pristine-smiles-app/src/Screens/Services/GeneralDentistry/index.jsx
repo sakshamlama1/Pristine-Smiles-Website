@@ -32,7 +32,7 @@ function GeneralDentistry() {
                             {/* Children Dentistry */}
                             <div className="service-tile">
                                 <h3>Children Dentistry</h3>
-                                <p>Regular check-ups and professional cleaning to maintain optimal oral health and catch any issues early.</p>
+                                <p>We offer gentle, friendly care in a relaxed setting to help kids feel at ease.</p>
                                 <NavLink to="/services/general/children-dentistry" className="tile-link">Learn More →</NavLink>
                             </div>
 
@@ -109,7 +109,7 @@ function GeneralDentistry() {
                             {/* Sleep Apnea Mouthguard */}
                             <div className="service-tile">
                                 <h3>Sleep Apnea Mouthguard</h3>
-                                <p>Save an infected tooth with expert root canal therapy to relieve pain and restore function.</p>
+                                <p>We provide custom mouthguards to improve sleep quality.</p>
                                 <NavLink to="/services/general/sleep-apnea-mouthguard" className="tile-link">Learn More →</NavLink>
                             </div>
 

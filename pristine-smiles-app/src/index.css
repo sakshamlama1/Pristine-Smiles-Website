@@ -59,7 +59,7 @@ a {
 /* Title text */
 .screen-title p {
   color: white;
-  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 1px;
   position: relative;
@@ -79,3 +79,24 @@ a {
   background: linear-gradient(90deg, #2D9CDB, #5B9D7D); /* Blue-green underline */
 }
 
+
+/* Medium screen - slightly smaller */
+@media (max-width: 1024px) {
+  .screen-title p {
+    font-size: 2.4rem !important;
+  }
+}
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .screen-title p {
+    font-size: 2.2rem !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .screen-title p {
+    font-size: 2rem !important;
+  }
+}

@@ -58,11 +58,11 @@
     font-size: 16px; /* Adjust the font size for the links */
     margin-top: 15px;
     padding-bottom: 5px;
+    transition: border-bottom 0.1s ease;
 }
 
 .column-anchor:hover {
     border-bottom: 2px solid #F1BF42;
-    width: fit-content;
 }
 
 /* Social media icons container */
