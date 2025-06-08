@@ -17,6 +17,7 @@
     justify-content: space-between;  /* Start with wide spacing */
     margin: 0 auto;  /* Center the entire footer content */
     gap: 6em; /* Large gap initially */
+    flex-wrap: wrap;
     transition: all 0.3s ease; /* Smooth transition for responsiveness */
 }
 
@@ -86,8 +87,7 @@
 }
 
 .footer-map {
-    min-width: 20%;
-    max-width: 20%;
+    width: clamp(250px, 20%, 300px);
     border-radius: 10px;
 }
 
@@ -136,4 +136,30 @@
     
 }
 
+@media (max-width: 400px) {
+    .footer-component {
+        padding: 2em 1em;
+    }
 
+    .footer-items {
+        gap: 1em;
+    }
+
+    .column h4 {
+        font-size: 18px;
+    }
+
+    .column-anchor {
+        font-size: 14px;
+    }
+
+    .social-media a {
+        width: 35px;
+        font-size: 20px;
+    }
+
+    .footer-map {
+        min-width: 90%;
+        max-width: 90%;
+    }
+}

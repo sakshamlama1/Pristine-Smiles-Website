@@ -36,7 +36,8 @@
 .faq-answer {
     margin-top: 12px;
     padding-left: 2px;
-    color: #444;
+    color: black;
+    font-size: 1.4rem;
 }
 
 /* FAQ Responsive Design */
@@ -50,11 +51,11 @@
     }
 
     .faq-question h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .faq-answer {
-        font-size: 1.05rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -67,7 +68,7 @@
     }
 
     .faq-question h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .faq-answer {
@@ -84,10 +85,10 @@
     }
 
     .faq-question h2 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .faq-answer {
-        font-size: 0.95rem;
+        font-size: 0.8rem;
     }
 }

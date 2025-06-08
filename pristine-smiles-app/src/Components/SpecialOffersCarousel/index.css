@@ -48,6 +48,7 @@
   scroll-snap-align: start;
   height: 100%;
   min-height: 380px;
+  min-width: 300px;
 }
 
 .offer-tile:hover {
@@ -107,6 +108,7 @@
 
 .nav-btn {
   height: 75px;
+  border-radius: 25%;
   flex-shrink: 0;
 }
 
@@ -190,6 +192,10 @@
   .nav-btn,
   .offer-cta {
     font-size: 1.2rem;
+  }
+
+  .nav-btn {
+    height: 50px;
   }
 }
 
