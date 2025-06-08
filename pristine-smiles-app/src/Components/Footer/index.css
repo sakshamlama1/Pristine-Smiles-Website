@@ -9,6 +9,7 @@
     padding: 3em 0;
     color: white; /* Default text color */
     gap: 0.5em;
+    padding: 0 1em;
 }
 
 /* Footer items container */
@@ -82,14 +83,19 @@
 
 .footer-content {
     display: flex;
-    flex-direction: column;
-
+    flex-wrap: wrap; /* Ensures map and text wrap on smaller screens */
+    justify-content: center; /* Center items */
+    gap: 2em;
 }
 
 .footer-map {
-    width: clamp(250px, 20%, 300px);
+    width: 100%; /* Take full width of column */
+    max-width: 300px;
+    min-width: 250px;
+    padding: 0.5em;
+    box-sizing: border-box; /* Ensure padding doesn't overflow */
     border-radius: 10px;
-}
+  }
 
 .footer-map h6 {
     font-size: 16px;
@@ -124,16 +130,11 @@
 }
 
 @media (max-width: 600px) {
-    .footer-items {
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5em;
+    .footer-map {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 1em;
     }
-
-    .column {
-        width: 80%;  /* Let each column take 80% width */
-    }
-    
 }
 
 @media (max-width: 400px) {

@@ -366,8 +366,7 @@
       display: flex !important;
     }
   
-    .header-items,
-    .header-buttons {
+    .header-items {
       display: none !important;
     }
 }
