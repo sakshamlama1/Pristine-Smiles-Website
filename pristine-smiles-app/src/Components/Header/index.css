@@ -362,42 +362,15 @@
     }
 }
 
-@media (max-width: 480px) {
-    .header-component {
-        padding: 10px 15px;
-        height: auto;
+@media (max-width: 400px) {
+    .hamburger {
+      display: flex !important;
     }
 
     .head-title {
-        flex: 1 1 100%;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-
-    .header-items, .header-buttons {
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .header-anchor {
-        font-size: 14px;
-        margin-right: 10px;
-    }
-
-    .header-buttons button {
-        min-width: 70px;
-        font-size: 14px;
-        padding: 0.4em 0.6em;
-    }
-
-    .hamburger {
-        order: 99;
-        margin-left: auto;
+        margin-left: 0;
     }
 }
-
   
 
 
