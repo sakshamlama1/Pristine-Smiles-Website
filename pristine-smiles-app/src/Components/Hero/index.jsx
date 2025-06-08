@@ -12,7 +12,7 @@ function Hero() {
                 With over 25 years of experience and a personal touch, Dr Pooja Lama are dedicated to providing quality quality General and Cosmetic Dentistry to local community.
             </p>
             <div className="cta-buttons">
-                <a href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" className="btn-primary">Book Now</a>
+                <a href="https://apac.mydentalhub.online/v1/view/organization/1956/index.html#/perspectives/1" className="btn-primary">Book Your Appointment</a>
                 <NavLink to="/services" className="btn-secondary">Our Services</NavLink>
             </div>
         </div>

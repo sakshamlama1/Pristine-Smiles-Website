@@ -12,10 +12,24 @@
 }
 
 .price-list-form-content h2 {
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
     color: #5B9D7D;
     margin-bottom: 1em;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #F1BF42;
+    padding-bottom: 0.5em;
+}
+
+.price-list-form-content h2::after {
+    content: ""; 
+    display: block;
+    width: 75%; 
+    height: 4px;
+    background: linear-gradient(90deg, #6EAEE0, #5B9D7D);
+    position: absolute;
+    bottom: -14px;
 }
 
 .submit-button {

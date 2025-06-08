@@ -16,6 +16,20 @@
     font-weight: 700;
     color: #5B9D7D;
     margin-bottom: 1em;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #F1BF42;
+    padding-bottom: 0.5em;
+}
+
+.get-in-touch-content h2::after {
+    content: ""; 
+    display: block;
+    width: 75%; 
+    height: 4px;
+    background: linear-gradient(90deg, #6EAEE0, #5B9D7D);
+    position: absolute;
+    bottom: -14px;
 }
 
 .floating-form {
@@ -78,7 +92,7 @@
 .small-note {
     font-size: 1.8rem;
     font-weight: 700;
-    color: black;
+    color: #5B9D7D;
     position: relative;
     display: inline-block;
     border-bottom: 4px solid #F1BF42;

@@ -39,9 +39,9 @@ function CosmeticDentistry() {
 
                             {/* Veneers */}
                             <div className="service-tile">
-                                <h3>Cosmetic Veneers</h3>
+                                <h3>Dental Veneers</h3>
                                 <p>Transform your smile with custom-made porcelain veneers that cover imperfections and deliver a flawless look.</p>
-                                <NavLink to="/services/cosmetic/cosmetic-veneers" className="tile-link">Learn More →</NavLink>
+                                <NavLink to="/services/cosmetic/dental-veneers" className="tile-link">Learn More →</NavLink>
                             </div>
 
                             {/* Invisalign */}
@@ -49,13 +49,6 @@ function CosmeticDentistry() {
                                 <h3>Invisalign</h3>
                                 <p>Straighten your teeth discreetly with clear, removable aligners that fit seamlessly into your lifestyle.</p>
                                 <NavLink to="/services/cosmetic/invisalign" className="tile-link">Learn More →</NavLink>
-                            </div>
-
-                            {/* Sleep Dentistry */}
-                            <div className="service-tile">
-                                <h3>Sleep Dentistry</h3>
-                                <p>Relax during your dental treatments with safe and gentle sedation options tailored to your needs.</p>
-                                <NavLink to="/services/cosmetic/sleep-dentistry" className="tile-link">Learn More →</NavLink>
                             </div>
 
                             {/* Teeth Whitening */}
