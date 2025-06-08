@@ -352,6 +352,11 @@
     }
 }
 
+@media (max-width: 400px) {
+    .head-title img {
+      width: 14em;
+    }
+}
 
 
 

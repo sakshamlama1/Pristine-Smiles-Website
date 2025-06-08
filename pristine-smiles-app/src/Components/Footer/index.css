@@ -112,6 +112,7 @@
 
     .footer-items {
         justify-content: center;
+        align-items: center;
         gap: 2em;
     }
 }
@@ -125,6 +126,15 @@
 
     .footer-map h6 {
         text-align: center;
+    }
+
+    .footer-items {
+        flex-direction: column;
+    }
+
+    .social-media {
+        justify-content: center;
+        align-items: center;
     }
 }
 
