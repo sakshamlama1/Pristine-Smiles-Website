@@ -19,6 +19,8 @@
     position: relative;
     display: inline-block;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-video-heading::after {
@@ -39,7 +41,8 @@
 }
 
 .video-wrapper video {
-    width: 100%;
+    width: 60vw;
+    min-width: 300px;
     height: auto;
     display: block;
     border-radius: 12px;
@@ -51,6 +54,9 @@
     gap: 2rem;
     margin-top: 2rem;
     align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .intro-text {
@@ -65,7 +71,7 @@
 .intro-cta {
     width: 100%;
     display: inline-block;
-    margin-top: 4rem;
+    margin-top: 3rem;
     background-color: #5B9D7D;
     color: white;
     padding: 0.9rem 1.8rem;
@@ -87,7 +93,7 @@
     }
 
     .intro-cta {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 }
 
@@ -102,7 +108,7 @@
     }
 
     .intro-cta {
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-size: 1.2rem;
         padding: 0.8rem 1.8rem;
     }
@@ -118,7 +124,6 @@
     }
 
     .intro-cta {
-        margin-top: 1rem;
         font-size: 1rem;
     }
 }
