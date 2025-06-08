@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Pristine-Smiles-Website/static/css/main.ae2660bd.css",
+    "main.css": "/Pristine-Smiles-Website/static/css/main.8e0daea5.css",
     "main.js": "/Pristine-Smiles-Website/static/js/main.94eaa209.js",
     "static/js/453.0d319a1b.chunk.js": "/Pristine-Smiles-Website/static/js/453.0d319a1b.chunk.js",
     "static/media/CompositeVeneersBonding.mp4": "/Pristine-Smiles-Website/static/media/CompositeVeneersBonding.43fd4d8da5eb28214bb6.mp4",
@@ -75,12 +75,12 @@
     "static/media/humm-instructions-3.png": "/Pristine-Smiles-Website/static/media/humm-instructions-3.535ed7d9a9cf27ea601a.png",
     "static/media/humm-instructions-1.png": "/Pristine-Smiles-Website/static/media/humm-instructions-1.0ca8ae204d5ec5a62cb6.png",
     "index.html": "/Pristine-Smiles-Website/index.html",
-    "main.ae2660bd.css.map": "/Pristine-Smiles-Website/static/css/main.ae2660bd.css.map",
+    "main.8e0daea5.css.map": "/Pristine-Smiles-Website/static/css/main.8e0daea5.css.map",
     "main.94eaa209.js.map": "/Pristine-Smiles-Website/static/js/main.94eaa209.js.map",
     "453.0d319a1b.chunk.js.map": "/Pristine-Smiles-Website/static/js/453.0d319a1b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae2660bd.css",
+    "static/css/main.8e0daea5.css",
     "static/js/main.94eaa209.js"
   ]
 }
